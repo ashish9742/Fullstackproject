@@ -1,0 +1,592 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px;
+        }
+
+
+
+
+        #section1 {
+            background-color: #f0ede4;
+            height: 91%;
+
+
+
+        }
+
+
+        #section2 {
+            height: 600px;
+            background-color: #f0ede4;
+            margin-top: 20px;
+            z-index: 4;
+        }
+
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        header ul {
+
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            z-index: 6;
+            min-height: 50px;
+            width: 100%;
+        }
+
+        header ul img {
+
+            margin-right: 920px;
+        }
+
+        header ul .zoom img:hover {
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+
+        ul {
+            list-style-type: none;
+
+            font-family: 'Do Hyeon', sans-serif;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: yellowgreen;
+
+
+
+        }
+
+        li {
+            display: flex;
+
+            flex-direction: row;
+            justify-content: flex-end;
+
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        li a.active {
+            color: black;
+
+            background-color: none;
+        }
+
+        li a.active {
+            border-bottom: 3px solid purple;
+        }
+
+
+
+
+
+        .main .b .img1 img {
+            display: flex;
+
+            width: 400px;
+            height: 400px;
+            margin-right: 80px;
+            margin-top: 60px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 20px black;
+
+
+        }
+
+        .main .b .img1 img:hover {
+
+
+            cursor: pointer;
+        }
+
+        .main .b .a .img2 {
+            display: flex;
+            height: 38px;
+            justify-content: flex-end;
+            margin-right: 500px;
+            margin-top: 20px;
+        }
+
+        .main .b .a .img2 img:hover {
+            box-shadow: 4px 4px 20px green;
+        }
+
+        .a {
+            padding-left: 0px;
+            font-size: 30px;
+            text-align: left;
+            width: 50%;
+            height: 350px;
+            margin-right: 50px;
+            margin-top: 40px;
+
+        }
+
+        .b {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 70%;
+
+        }
+
+        p {
+            text-indent: 0px;
+            text-align: justify;
+            margin-top: 20px;
+            padding: 10px;
+            padding-bottom: 20px;
+            /* height: 70%; */
+            color: rgb(6, 7, 7);
+            font-family: "Do Hyeon", sans-serif;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<title> </title>
+
+<body>
+    <div class="main" id="section1">
+        <header>
+
+
+            <ul>
+                <div class="zoom"><img src="https://img.icons8.com/ios-filled/50/000000/hiragana-a.png" /></div>
+
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#news">ABOUT</a></li>
+                <li><a href="#contact">PORTFOLIO</a></li>
+                <li><a href="#about">BLOG</a></li>
+            </ul>
+
+
+        </header>
+
+        <div class="b">
+            <style>
+                @media screen and (max-width:600px) {
+                    .main .b .img1 img {
+
+                        width: 70%;
+                    }
+                }
+            </style>
+            <div class="img1">
+                <img src="IMG_20160808_152313.jpg" alt="ashish kumar" />
+            </div>
+            <style>
+                @media screen and (max-width:600px) {
+                    .main .a p {
+
+                        width: 70%;
+                    }
+                }
+            </style>
+
+            <div class="a">
+
+                <p>
+                    Hello.My name is Ashish.k.
+                    I'm a backend developer currently interested in remote work.
+
+                    <style>
+                        p {
+                            font-family: "Do Hyeon", sans-serif;
+                        }
+                    </style>
+                </p>
+                <div></div>
+                <div class="img2">
+                    <img src="https://img.icons8.com/color/48/000000/gmail-login.png" />
+                    <img src="https://img.icons8.com/fluent/48/000000/github.png" />
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png" />
+                </div>
+                <div>
+                    <style>
+                        table {
+                            border-collapse: separate;
+                            border-spacing: 10 15px;
+                            margin-top: 150px;
+
+                            display: flex;
+                            justify-content: space-around;
+
+                        }
+
+                        @media screen and (max-width:600px) {
+                            table {
+
+                                width: 50%;
+                            }
+                        }
+
+
+                        th {
+                            background-color: none;
+                            color: black;
+                        }
+
+                        th,
+                        td {
+                            width: 250px;
+                            text-align: left;
+
+                            padding: 5px;
+                        }
+                    </style>
+                    <table>
+                        <tr>
+                            <th> SERVICES</th>
+                            <th>DETAILS</th>
+                            <th>CLAIMS TO FAME</th>
+                        </tr>
+
+                        <tr>
+                            <td>-Fullstack developer</td>
+                            <td>-backend </td>
+                            <td>-2 years of experience.</td>
+                        </tr>
+
+                        <tr>
+                            <td>-Metrics productivity management </td>
+                            <td>-quality assurance</td>
+                            <td>-Inspection </td>
+                        </tr>
+
+                        <tr>
+                            <td>-CSR activites</td>
+                            <td>-Networking protocols</td>
+                            <td>-Embedded projects</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <style>
+            .h2 a h2 {
+                margin-top: 150px;
+                display: flex;
+                justify-content: flex-end;
+                font-size: 25px;
+            }
+        </style>
+        <div class="h2">
+
+
+            <a href="#section2">
+                <h2><button>Next</button></h2>
+            </a></div>
+    </div>
+
+
+
+    <div class="main" id="section2">
+
+        <a href="#section1"><button> Home</button> </a>
+
+        <div>
+
+            <style>
+                html,
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Helvetica, sans-serif;
+
+
+                }
+
+                body {
+                    background: #f0ede4;
+
+                }
+
+                .important {
+                    margin: 50px;
+
+                    display: block;
+
+                }
+
+                section#timeline {
+                    width: 80%;
+                    margin: 60px auto;
+                    position: relative;
+
+
+                }
+
+                section#timeline:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    top: 5px;
+                    margin: 0 0 0 -1px;
+                    width: 2px;
+                    height: 50%;
+                    background: rgba(255, 255, 255, 0.2);
+
+                }
+
+                section#timeline article {
+                    width: 100%;
+                    margin: 0 0 20px 0;
+                    position: relative;
+                }
+
+                section#timeline article:after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                section#timeline article div.inner {
+                    width: 40%;
+                    float: left;
+                    margin: 5px 0 0 0;
+                    border-radius: 6px;
+                }
+
+                section#timeline article div.inner span.date {
+                    display: block;
+                    width: 60px;
+                    height: 50px;
+                    padding: 5px 0;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    margin: 0 0 0 -32px;
+                    border-radius: 100%;
+                    font-size: 12px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    background: #25303B;
+                    color: rgba(255, 255, 255, 0.5);
+                    border: 2px solid rgba(255, 255, 255, 0.2);
+                    box-shadow: 0 0 0 7px #25303B;
+                }
+
+                section#timeline article div.inner span.date span {
+                    display: block;
+                    text-align: center;
+                }
+
+                section#timeline article div.inner span.date span.day {
+                    font-size: 10px;
+                }
+
+                section#timeline article div.inner span.date span.month {
+                    font-size: 18px;
+                }
+
+                section#timeline article div.inner span.date span.year {
+                    font-size: 10px;
+                }
+
+                section#timeline article div.inner h2 {
+                    padding: 15px;
+                    margin: 0;
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                    border-radius: 6px 6px 0 0;
+                    position: relative;
+                }
+
+                section#timeline article div.inner h2:after {
+                    content: '';
+                    position: absolute;
+                    top: 20px;
+                    right: -5px;
+                    width: 10px;
+                    height: 10px;
+
+                }
+
+                section#timeline article div.inner p {
+                    padding: 15px;
+                    margin: 0;
+                    font-size: 14px;
+                    background: #fff;
+                    color: #656565;
+                    border-radius: 0 0 6px 6px;
+                }
+
+                section#timeline article:nth-child(2n+2) div.inner {
+                    float: right;
+                }
+
+                section#timeline article:nth-child(2n+2) div.inner h2:after {
+                    left: -5px;
+                }
+
+                section#timeline article:nth-child(1) div.inner h2 {
+                    background: #e74c3c;
+                }
+
+                section#timeline article:nth-child(1) div.inner h2:after {
+                    background: #e74c3c;
+                }
+
+                section#timeline article:nth-child(2) div.inner h2 {
+                    background: #2ecc71;
+                }
+
+                section#timeline article:nth-child(2) div.inner h2:after {
+                    background: #2ecc71;
+                }
+
+                section#timeline article:nth-child(3) div.inner h2 {
+                    background: #e67e22;
+                }
+
+                section#timeline article:nth-child(3) div.inner h2:after {
+                    background: #e67e22;
+                }
+
+                section#timeline article:nth-child(4) div.inner h2 {
+                    background: #1abc9c;
+                }
+
+                section#timeline article:nth-child(4) div.inner h2:after {
+                    background: #1abc9c;
+                }
+
+                section#timeline article:nth-child(5) div.inner h2 {
+                    background: #9b59b6;
+                }
+
+                section#timeline article:nth-child(5) div.inner h2:after {
+                    background: #9b59b6;
+                }
+            </style>
+            <div class="important">
+                <section id="timeline">
+                    <article>
+                        <div class="inner">
+                            <span class="date">
+                                <span class="day">30<sup>th</sup></span>
+                                <span class="month">June</span>
+                                <span class="year">2020</span>
+                            </span>
+                            <h2>Flange Inspection</h2>
+                            <p>Contractor: TR- Abu Dhabi
+                                Inspection: Stainless steel and super duplex flanges
+                                Vendor:: Cunado piping & valves FZE
+                                Location:: GoodLuckIndia Dhoom Manikpur Dadri</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="inner">
+                            <span class="date">
+                                <span class="day">26<sup>th</sup></span>
+                                <span class="month">feb</span>
+                                <span class="year">2018</span>
+                            </span>
+                            <h2>CDAC Embedded systems</h2>
+                            <p>PG-Diploma in Embedded Systems Design AUG2018–FEB2019NOIDAs.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="inner">
+                            <span class="date">
+                                <span class="day">26<sup>th</sup></span>
+                                <span class="month">July</span>
+                                <span class="year">2017</span>
+                            </span>
+                            <h2>protocol Testing</h2>
+                            <p>Description: Project deals with feature and functional testing and regression
+                                testing of 2G,3G,4G calls, RAT change, services involving pcrf node..</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="inner">
+                            <span class="date">
+                                <span class="day">26<sup>th</sup></span>
+                                <span class="month">June</span>
+                                <span class="year">2015</span>
+                            </span>
+                            <h2>Lte protocol</h2>
+                            <p>Client: At&t
+                                Environment: Windows Vista, Win XP, Linux
+                                Testing Tools: : Landslide, wire shark, xshell
+                                .</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="inner">
+                            <span class="date">
+                                <span class="day">26<sup>th</sup></span>
+                                <span class="month">July</span>
+                                <span class="year">2015</span>
+                            </span>
+                            <h2>Graduated in EEE</h2>
+                            <p>BE Electrical & Electronics engineering from NHCE, Bangalore</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+
+        </div>
+
+        <style>
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: yellowgreen;
+                display: flex;
+                justify-content: flex-end;
+                height: 50px;
+                font-weight: 500;
+                border-top: 5px solid yellowgreen;
+            }
+
+            .footer.p {
+                color: yellowgreen;
+
+
+            }
+        </style>
+
+
+        <div class="footer">
+
+            <p> <b>A LOT MORE COMING SOON.REALLY. JUST WAIT.</b></p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
